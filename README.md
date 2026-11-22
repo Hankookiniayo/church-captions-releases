@@ -13,7 +13,9 @@
 
 ## 설치
 
-**맥**: dmg를 열고 ChurchCaptions를 Applications 폴더로 끌어다 놓으세요. 처음 열 때 경고가 나오면 시스템 설정 → 개인정보 보호 및 보안 → **그래도 열기**.
+**맥**: dmg를 열고 ChurchCaptions를 Applications 폴더로 끌어다 놓으세요. 처음 열 때 **"손상되었기 때문에 열 수 없습니다"** 가 나오면 [취소]를 누르고(휴지통 X), 터미널(⌘+스페이스 → 터미널)에 아래 한 줄을 붙여 넣고 엔터 → 앱을 다시 여세요. 앱이 망가진 게 아니라 서명 안 된 앱을 맥이 막는 것이고, 새 버전을 설치할 때마다 한 번씩 해 주세요.
+
+`xattr -dr com.apple.quarantine /Applications/ChurchCaptions.app`
 
 **윈도우**: setup.exe를 실행하세요. "Windows의 PC 보호"가 나오면 **추가 정보 → 실행**. 관리자 권한은 필요 없습니다.
 
